@@ -1,0 +1,59 @@
+/*
+Theme Name: Lizepress
+Author: John Henriksson
+Author URI: https://github.com/johnhenriksson
+Version: 1.0
+
+*/
+
+/* Single Content */
+
+.single-content h1,
+.single-content h2,
+.single-content h3,
+.single-content h4,
+.single-content h5,
+.single-content h6
+{
+	color: #89bdd3 !important;
+}
+
+
+header,
+header a, 
+header a:visited, 
+footer, 
+footer a, 
+footer a:visited {
+	color: #fff !important;
+}
+.card a,
+.card a:visited{
+	color: #9ad3de !important;
+}
+header nav,
+footer {
+	background-color: #89bdd3 !important;
+}
+
+.pagination a,
+.paginated a:visited {
+	color: #9ad3de !important;
+}
+
+/* Footer Copyright */
+
+footer .footer-copyright{
+	color: #fff !important;
+}
+
+footer .footer-copyright,
+.header-line {
+	background-color: #9ad3de !important;
+	min-height: 40px;
+}
+/* Menu Items */
+.current_page_item,
+.current_page_item a:hover {
+	background-color: #9ad3de !important;
+}
