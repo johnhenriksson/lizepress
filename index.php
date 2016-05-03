@@ -18,13 +18,13 @@ if (have_posts()) :
           	<a href="<?php the_permalink(); ?>">
             <div class="card-image">
 				<img src="<?php echo $thumb_url[0]; ?>" class="responsive-img">
-              <span class="card-title"><?php the_title();?></span>
+              <span class="card-title"><h4><?php the_title();?></h4></span>
             </div>
             </a>
             <div class="card-content">
            <?php else : ?>
            	<div class="card-content">
-              <span class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></span>
+              <span class="card-title"><h5><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h5></span>
         	<?php endif; ?>
             
               <p><?php the_excerpt(); ?></p>

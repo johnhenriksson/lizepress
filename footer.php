@@ -8,7 +8,6 @@
             <div class="row">
               <div class="col l6 s12">
                 <h5><?php bloginfo('description') ?></h5>
-                <p>You can use rows and columns here to organize your footer content.</p>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5>Links</h5>
