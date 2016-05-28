@@ -31,10 +31,10 @@ body {
 
 
 header,
-header a, 
-header a:visited, 
-footer, 
-footer a, 
+header a,
+header a:visited,
+footer,
+footer a,
 footer a:visited {
 	color: #fff !important;
 }
@@ -47,7 +47,8 @@ footer a:visited {
 }
 .card
 .card a,
-.card a:visited{
+.card a:visited,
+.card-action a{
 	color: #E74532 !important;
 }
 
@@ -57,6 +58,10 @@ footer a:visited {
 .card-title a,
 .card-title a:visited{
 	color: #2980B9 !important;
+}
+.card-image img {
+	height: 420px;
+	overflow: hidden;
 }
 header nav,
 footer {
@@ -88,5 +93,10 @@ footer .footer-copyright,
 /* Menu Items */
 header .current_page_item,
 header .current_page_item a:hover {
+	background-color: #3498DB !important;
+}
+
+/* Buttons */
+.btn{
 	background-color: #3498DB !important;
 }

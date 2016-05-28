@@ -7,26 +7,28 @@ get_header ();
 if (have_posts()) :
 	while (have_posts()) : the_post();
 	?>
-	<?php 
+	<?php
 	$thumb_id = get_post_thumbnail_id();
 	$thumb_url = wp_get_attachment_image_src($thumb_id,'thumbnail-size', true);
 	 ?>
 	<div class="row">
         <div class="col s12 m12">
-          <div class="card">
           <?php if (has_post_thumbnail()) : ?>
+          <div class="card large">
           	<a href="<?php the_permalink(); ?>">
             <div class="card-image">
 				<img src="<?php echo $thumb_url[0]; ?>" class="responsive-img">
-              <span class="card-title"><h4><?php the_title();?></h4></span>
+              <!-- <span class="card-title"><h4><?php the_title();?></h4></span> -->
             </div>
             </a>
             <div class="card-content">
+            <span class="card-title"><h5><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h5></span>
            <?php else : ?>
+            <div class="card">
            	<div class="card-content">
               <span class="card-title"><h5><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h5></span>
         	<?php endif; ?>
-            
+
               <p><?php the_excerpt(); ?></p>
             </div>
             <div class="card-action">
@@ -41,9 +43,9 @@ if (have_posts()) :
 			<h5 class="left-align"><?php previous_posts_link(); ?></h5><h5 class="right-align"><?php next_posts_link(); ?></h5>
 		</div>
 	</div>
-		
-	
-	
+
+
+
 
 	<?php
 
