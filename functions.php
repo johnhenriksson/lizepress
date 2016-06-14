@@ -1,5 +1,12 @@
 <?php
 
+// List Categories
+function custom_wp_list_categories($categories){
+    // do something to the $categories returned by wp_list_categories()
+
+    return $categories;
+}
+
 // Add responsive class to images
 function add_responsive_class($content){
 
@@ -75,6 +82,9 @@ function lizepress_enqueue_script() {
 }
 
 // ---- Hooks
+
+// List categories
+add_filter('wp_list_categories', 'custom_wp_list_categories');
 
 // responsive images
 add_filter('the_content', 'add_responsive_class');

@@ -100,3 +100,14 @@ header .current_page_item a:hover {
 .btn{
 	background-color: #3498DB !important;
 }
+
+/* Collections */
+div.collection a.collection-item.active {
+	color: fff !import;
+	background-color: #3498DB !important;
+}
+
+div.collection a.collection-item{
+	color: #3498DB;
+}s
+
