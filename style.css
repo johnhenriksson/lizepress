@@ -6,18 +6,15 @@ Version: 1.0
 
 */
 
-/* Google Fonts */
-/*@import url(https://fonts.googleapis.com/css?family=Catamaran);*/
-
 @font-face{
-	font-family: 'Catamaran';
-	src: url('fonts/catamaran/Catamaran-Regular.ttf');
+	font-family: 'Raleway';
+	src: url('fonts/Raleway/Raleway-Regular.ttf');
 }
 
 /* Single Content */
 
 body {
-	font-family: 'Catamaran', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 .single-content h1,
 .single-content h2,
