@@ -33,7 +33,7 @@ get_header ();
 	          <p><?php the_excerpt(); ?></p>
 	        </div>
 	        <div class="card-action">
-	          <a href="<?php the_permalink(); ?>">Read more...</a>
+	          <a href="<?php the_permalink(); ?>">Läs mer...</a>
 	        </div>
 	      </div>
 		<?php endwhile; ?>
@@ -49,7 +49,7 @@ get_header ();
 		<!-- End Search -->
 		<!-- Categories -->
 		<div class="row">
-			<h5>Categories</h5>
+			<h5>Kategorier</h5>
 			<div class="collection">
 				<?php 
 					$categories = get_categories();
