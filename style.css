@@ -106,5 +106,10 @@ div.collection a.collection-item.active {
 
 div.collection a.collection-item{
 	color: #3498DB;
-}s
+}
 
+/* Comments */
+textarea {
+	width: 100% !important;
+    height: 20em !important;
+}

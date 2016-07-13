@@ -18,7 +18,7 @@ if (have_posts()) :
 
 	endif;
 ?>
-
+<?php comments_template(); ?>
 <?php
 get_footer ();
 ?>
