@@ -10,7 +10,7 @@
                 <h5><?php bloginfo('description') ?></h5>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5>Links</h5>
+                <h5>Länkar</h5>
                 <?php
 
                 $args = array (
