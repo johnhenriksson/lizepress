@@ -68,8 +68,6 @@ function auto_featured_image() {
          }
     }
 }
-// Featured images size
-set_post_thumbnail_size( 845, 563, true ); 
 
 // Load CSS Styles
 function lizepress_enqueue_style() {
