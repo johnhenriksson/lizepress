@@ -54,6 +54,9 @@ function lizepress_widgets_init() {
 		));
 }
 
+
+
+
 // Generate auto featured images of first image in post
 function auto_featured_image() {
     global $post;
@@ -84,6 +87,8 @@ function lizepress_enqueue_script() {
 
 // ---- Hooks
 
+
+
 // List categories
 add_filter('wp_list_categories', 'custom_wp_list_categories');
 
@@ -109,6 +114,8 @@ add_action( 'wp_enqueue_scripts', 'lizepress_enqueue_script' );
 
 // Featured image functions
 add_theme_support( 'post-thumbnails' ); 
+// Featured Images
+add_image_size('card-center', 845, 300, array('center','center'));
 // Use it temporary to generate all featured images
 // add_action('the_post', 'auto_featured_image');
 // Used for new posts

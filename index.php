@@ -12,9 +12,10 @@ get_header ();
 			?>
 		<?php
 		$thumb_id = get_post_thumbnail_id();
-		$thumb_url = wp_get_attachment_image_src($thumb_id,'large', true);
+		$thumb_url = wp_get_attachment_image_src($thumb_id, 'card-center', true);
 		 ?>
       	<?php if (has_post_thumbnail()) : ?>
+      		<?php // the_post_thumbnail('card-center') ?>
 	      <div class="card large">
 	      	<a href="<?php the_permalink(); ?>">
 	        <div class="card-image">
