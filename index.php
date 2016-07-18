@@ -5,7 +5,7 @@ get_header ();
 <!-- Main content -->
 <div class="row">
 	<!-- Posts -->
-	<div class="col s8 m8">
+	<div class="col s8 m8 l8">
 		<?php
 		if (have_posts()) :
 			while (have_posts()) : the_post();
@@ -15,11 +15,11 @@ get_header ();
 		$thumb_url = wp_get_attachment_image_src($thumb_id, 'card-center', true);
 		 ?>
       	<?php if (has_post_thumbnail()) : ?>
-      		<?php // the_post_thumbnail('card-center') ?>
-	      <div class="card large">
+	      <div class="card ">
 	      	<a href="<?php the_permalink(); ?>">
 	        <div class="card-image">
 				<img src="<?php echo $thumb_url[0]; ?>" class="responsive-img">
+				
 	          <!-- <span class="card-title"><h4><?php the_title();?></h4></span> -->
 	        </div>
 	        </a>
@@ -34,7 +34,7 @@ get_header ();
 	          <p><?php the_excerpt(); ?></p>
 	        </div>
 	        <div class="card-action">
-	          <a href="<?php the_permalink(); ?>">Läs mer...</a>
+	          <a href="<?php the_permalink(); ?>" class="btn btn-large" >Läs mer...</a>
 	        </div>
 	      </div>
 		<?php endwhile; ?>
@@ -76,8 +76,11 @@ get_header ();
 
 <!-- Pagination -->
 <div class="row">
-	<div class="col s12 m12 pagination">
-		<h5 class="left-align"><?php previous_posts_link(); ?></h5><h5 class="right-align"><?php next_posts_link(); ?></h5>
+	<div class="col s6 m6 l6 pagination">
+		<h6 class="left-align btn btn-large"><?php previous_posts_link(); ?></h6>
+	</div>
+	<div class="col s6 m6 l6 pagination">
+		<h6 class="right-align btn btn-large"><?php next_posts_link(); ?></h6>
 	</div>
 </div>
 <!-- End Pagination -->

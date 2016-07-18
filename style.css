@@ -38,17 +38,6 @@ footer a:visited {
 
 /* Cards */
 
-.card-content,
-.single-content {
-
-}
-.card
-.card a,
-.card a:visited,
-.card-action a{
-	color: #E74532 !important;
-}
-
 .card-title{
 	color: #fff !important;
 }
@@ -56,10 +45,10 @@ footer a:visited {
 .card-title a:visited{
 	color: #2980B9 !important;
 }
-.card-image img {
+/*.card-image img {
 	height: 420px;
 	overflow: hidden;
-}
+}*/
 header nav,
 footer {
 	background-color: #2C3E50 !important;
@@ -67,7 +56,7 @@ footer {
 
 .pagination a,
 .paginated a:visited {
-	color: #E74532 !important;
+	color: #fff !important;
 }
 
 /* Footer Copyright text */
