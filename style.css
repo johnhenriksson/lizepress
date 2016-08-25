@@ -77,6 +77,11 @@ footer a:visited {
 	color: #fff !important;
 }
 
+/* comments-link */
+.comments-link hr{
+	margin-bottom: 30px;
+}
+
 /* Seperator */
 
 .post-seperator{
