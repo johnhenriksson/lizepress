@@ -25,10 +25,10 @@ if (have_posts()) :
   </div>
   <?php the_content( 'Läs mer av inlägget: ' .  get_the_title() ); ?>
   </div>
-    <p>
-  This post currently has
-  <?php comments_number( 'no responses', 'one response', '% responses' ); ?>.
-</p>
+    <a href="<?php comments_link(); ?>">
+  Inlägget har
+  <?php comments_number( 'ingen kommentar', 'en kommentar', '% kommentarer' ); ?>.
+</a>
   <div class="row post-seperator">
   </div>
 	<?php endwhile;
