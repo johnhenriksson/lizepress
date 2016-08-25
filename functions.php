@@ -17,12 +17,12 @@ function add_responsive_class($content){
         $document->loadHTML(utf8_decode($content));
 
         $imgs = $document->getElementsByTagName('img');
-        foreach ($imgs as $img) {           
+        foreach ($imgs as $img) {
            $img->setAttribute('class','responsive-img');
         }
 
         $html = $document->saveHTML();
-        return $html;   
+        return $html;
 }
 
 // Flow Text
@@ -34,12 +34,12 @@ function add_flowtext($content){
         $document->loadHTML(utf8_decode($content));
 
         $paragraphs = $document->getElementsByTagName('p');
-        foreach ($paragraphs as $paragraph) {           
+        foreach ($paragraphs as $paragraph) {
            $paragraph->setAttribute('class','flow-text');
         }
 
         $html = $document->saveHTML();
-        return $html;   
+        return $html;
 }
 
 // Widget functions
@@ -60,10 +60,10 @@ function lizepress_widgets_init() {
 // Generate auto featured images of first image in post
 function auto_featured_image() {
     global $post;
- 
+
     if (!has_post_thumbnail($post->ID)) {
         $attached_image = get_children( "post_parent=$post->ID&amp;post_type=attachment&amp;post_mime_type=image&amp;numberposts=1" );
-         
+
       if ($attached_image) {
               foreach ($attached_image as $attachment_id => $attachment) {
                    set_post_thumbnail($post->ID, $attachment_id);
@@ -75,10 +75,10 @@ function auto_featured_image() {
 // Load CSS Styles
 function lizepress_enqueue_style() {
 
-	wp_enqueue_style( 'core', get_stylesheet_uri()); 
+	wp_enqueue_style( 'core', get_stylesheet_uri());
 	wp_enqueue_style( 'materialize', get_template_directory_uri() . '/css/materialize.min.css' );
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
-	
+
 }
 
 function lizepress_enqueue_script() {
@@ -96,7 +96,7 @@ add_filter('wp_list_categories', 'custom_wp_list_categories');
 add_filter('the_content', 'add_responsive_class');
 
 // Flow Text
-add_filter('the_content', 'add_flowtext');
+//add_filter('the_content', 'add_flowtext');
 
 // Register menus
 
@@ -113,7 +113,7 @@ add_action( 'wp_enqueue_scripts', 'lizepress_enqueue_style' );
 add_action( 'wp_enqueue_scripts', 'lizepress_enqueue_script' );
 
 // Featured image functions
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
 // Featured Images
 add_image_size('card-center', 845, 300, array('center','center'));
 // Use it temporary to generate all featured images
