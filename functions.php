@@ -1,6 +1,6 @@
 <?php
 
-
+require_once('lib/social-buttons.php');
 // List Categories
 function custom_wp_list_categories($categories){
     // do something to the $categories returned by wp_list_categories()
@@ -78,6 +78,7 @@ function lizepress_enqueue_style() {
 	wp_enqueue_style( 'core', get_stylesheet_uri());
 	wp_enqueue_style( 'materialize', get_template_directory_uri() . '/css/materialize.min.css' );
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
+  wp_enqueue_style( 'social-buttons.css', get_template_directory_uri() . '/css/social-buttons.css' );
 
 }
 

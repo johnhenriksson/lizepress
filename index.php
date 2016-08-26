@@ -25,12 +25,6 @@ if (have_posts()) :
   </div>
   <?php the_content( 'Läs mer av inlägget: ' .  get_the_title() ); ?>
   </div>
-  <div class="comments-link">
-  <hr width="50%">
-   <a href="<?php comments_link(); ?>">
-  Inlägget har <?php comments_number( 'ingen kommentar', 'en kommentar', '% kommentarer' ); ?>.
-	</a>
-	</div>
   <div class="row post-seperator">
   </div>
 	<?php endwhile;
